@@ -5,7 +5,7 @@
 ```js
 // Add a callback function to the queue
 // with 0 or more arguments for the function.
-queue.add([arg1], [arg2], ... [callback]);
+queue.add([arg1], [arg2], ... callback);
 
 // Call this method when you want to proceed to
 // the next task. It's expected that this will be 
