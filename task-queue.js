@@ -1,6 +1,5 @@
 var TaskQueue = function() {
 
-	this._group = null;
 	this._final_callback = null;
 	this._queue = [];
 
