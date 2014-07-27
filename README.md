@@ -38,7 +38,7 @@ queue.add(function() {
 });
 
 queue.add(function() {
-  do_something_else
+  do_something_else();
   queue.next();
 });
 
