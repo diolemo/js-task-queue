@@ -1,30 +1,5 @@
 # task-queue.js
 
-#### Basic Example
-
-```js
-var queue = new TaskQueue();
-
-queue.add(function() {
-  do_something_async(function() {
-    queue.next();
-  });
-});
-
-queue.add(function() {
-  do_something_else
-  queue.next();
-});
-
-queue.add(function() {
-  do_something_async(function() {
-    queue.next();
-  });
-});
-
-queue.execute();
-```
-
 #### Reference
 
 ```js
@@ -49,6 +24,31 @@ queue.break();
 // Start executing the queue and 
 // execute the callback when done.
 queue.execute([callback]);
+```
+
+#### Basic Example
+
+```js
+var queue = new TaskQueue();
+
+queue.add(function() {
+  do_something_async(function() {
+    queue.next();
+  });
+});
+
+queue.add(function() {
+  do_something_else
+  queue.next();
+});
+
+queue.add(function() {
+  do_something_async(function() {
+    queue.next();
+  });
+});
+
+queue.execute();
 ```
 
 #### Advanced Example
